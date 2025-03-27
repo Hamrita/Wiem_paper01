@@ -337,7 +337,7 @@ t1=rbind(acc_btc_lstm, acc_btc_gru, acc_btc_ols, acc_btc_bg, acc_btc_sa)
 
 ```{r, eval=TRUE}
 acc_eth_lstm=c(metriks(train_eth,LSTM_fit_eth),metriks(test_eth,LSTM_pred_eth))
-acc_eth_gru=c(metriks(train_eth,GRU_fit_eth),metriks(test_eth,LSTM_pred_eth))
+acc_eth_gru=c(metriks(train_eth,GRU_fit_eth),metriks(test_eth,GRU_pred_eth))
 acc_eth_ols=c(metriks(train_eth,ols_eth$Fitted),metriks(test_eth,ols_eth$Forecasts_Test))
 acc_eth_bg=c(metriks(train_eth,bg_eth$Fitted),metriks(test_eth,bg_eth$Forecasts_Test))
 acc_eth_sa=c(metriks(train_eth,sa_eth$Fitted),metriks(test_eth,sa_eth$Forecasts_Test))

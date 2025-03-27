@@ -524,7 +524,7 @@
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{acc\_eth\_lstm}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,LSTM\_fit\_eth),}\FunctionTok{metriks}\NormalTok{(test\_eth,LSTM\_pred\_eth))}
-\NormalTok{acc\_eth\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,GRU\_fit\_eth),}\FunctionTok{metriks}\NormalTok{(test\_eth,LSTM\_pred\_eth))}
+\NormalTok{acc\_eth\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,GRU\_fit\_eth),}\FunctionTok{metriks}\NormalTok{(test\_eth,GRU\_pred\_eth))}
 \NormalTok{acc\_eth\_ols}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,ols\_eth}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_eth,ols\_eth}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_eth\_bg}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,bg\_eth}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_eth,bg\_eth}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_eth\_sa}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_eth,sa\_eth}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_eth,sa\_eth}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
@@ -618,7 +618,7 @@
 \addlinespace[0.3em]
 \multicolumn{7}{l}{\textbf{ETH}}\\
 \hspace{1em}LSTM & 74.317 & 7.253 & 8.811 & 114.527 & 9.216 & 2.99\\
-\hspace{1em}GRU & 62.238 & 6.376 & 4.426 & 114.527 & 9.216 & 2.99\\
+\hspace{1em}GRU & 62.238 & 6.376 & 4.426 & 125.011 & 9.693 & 3.264\\
 \hspace{1em}Comb\_OLS & 59.769 & 6.114 & 4.288 & 120.632 & 9.469 & 3.115\\
 \hspace{1em}Comb\_BG & 62.258 & 6.478 & 5.764 & 117.045 & 9.313 & 3.018\\
 \hspace{1em}Comb\_SA & 63.24 & 6.556 & 6.15 & 115.978 & 9.262 & 2.987\\
