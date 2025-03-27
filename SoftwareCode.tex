@@ -513,7 +513,7 @@
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{acc\_btc\_lstm}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,LSTM\_fit\_btc),}\FunctionTok{metriks}\NormalTok{(test\_btc,LSTM\_pred\_btc))}
-\NormalTok{acc\_btc\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,GRU\_fit\_btc),}\FunctionTok{metriks}\NormalTok{(test\_btc,LSTM\_pred\_btc))}
+\NormalTok{acc\_btc\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,GRU\_fit\_btc),}\FunctionTok{metriks}\NormalTok{(test\_btc,GRU\_pred\_btc))}
 \NormalTok{acc\_btc\_ols}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,ols\_btc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_btc,ols\_btc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_btc\_bg}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,bg\_btc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_btc,bg\_btc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_btc\_sa}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_btc,sa\_btc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_btc,sa\_btc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
@@ -535,7 +535,7 @@
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{acc\_ltc\_lstm}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,LSTM\_fit\_ltc),}\FunctionTok{metriks}\NormalTok{(test\_ltc,LSTM\_pred\_ltc))}
-\NormalTok{acc\_ltc\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,GRU\_fit\_ltc),}\FunctionTok{metriks}\NormalTok{(test\_ltc,LSTM\_pred\_ltc))}
+\NormalTok{acc\_ltc\_gru}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,GRU\_fit\_ltc),}\FunctionTok{metriks}\NormalTok{(test\_ltc,GRU\_pred\_ltc))}
 \NormalTok{acc\_ltc\_ols}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,ols\_ltc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_ltc,ols\_ltc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_ltc\_bg}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,bg\_ltc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_ltc,bg\_ltc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
 \NormalTok{acc\_ltc\_sa}\OtherTok{=}\FunctionTok{c}\NormalTok{(}\FunctionTok{metriks}\NormalTok{(train\_ltc,sa\_ltc}\SpecialCharTok{$}\NormalTok{Fitted),}\FunctionTok{metriks}\NormalTok{(test\_ltc,sa\_ltc}\SpecialCharTok{$}\NormalTok{Forecasts\_Test))}
@@ -611,7 +611,7 @@
 \addlinespace[0.3em]
 \multicolumn{7}{l}{\textbf{BTC}}\\
 \hspace{1em}LSTM & 1390.264 & 31.308 & 4.563 & 5358.839 & 66.428 & 5.114\\
-\hspace{1em}GRU & 1308.704 & 28.497 & 3.073 & 5358.839 & 66.428 & 5.114\\
+\hspace{1em}GRU & 1308.704 & 28.497 & 3.073 & 4311.471 & 59.87 & 4.282\\
 \hspace{1em}Comb\_OLS & 1033.683 & 24.165 & 2.396 & 2987.408 & 47.695 & 2.693\\
 \hspace{1em}Comb\_BG & 1340.918 & 29.712 & 3.662 & 4786.434 & 63.029 & 4.672\\
 \hspace{1em}Comb\_SA & 1343.37 & 29.799 & 3.709 & 4818.105 & 63.227 & 4.697\\
@@ -625,7 +625,7 @@
 \addlinespace[0.3em]
 \multicolumn{7}{l}{\textbf{LTC}}\\
 \hspace{1em}LSTM & 6.586 & 1.948 & 3.781 & 4.845 & 1.792 & 3.341\\
-\hspace{1em}GRU & 6.118 & 2.02 & 4.749 & 4.845 & 1.792 & 3.341\\
+\hspace{1em}GRU & 6.118 & 2.02 & 4.749 & 4.977 & 1.856 & 3.81\\
 \hspace{1em}Comb\_OLS & 5.801 & 1.845 & 3.424 & 4.728 & 1.755 & 3.214\\
 \hspace{1em}Comb\_BG & 5.974 & 1.914 & 3.981 & 4.698 & 1.758 & 3.261\\
 \hspace{1em}Comb\_SA & 5.99 & 1.91 & 3.941 & 4.691 & 1.755 & 3.244\\

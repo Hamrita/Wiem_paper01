@@ -328,7 +328,7 @@ metriks=function(x,y){
 
 ```{r, eval=TRUE}
 acc_btc_lstm=c(metriks(train_btc,LSTM_fit_btc),metriks(test_btc,LSTM_pred_btc))
-acc_btc_gru=c(metriks(train_btc,GRU_fit_btc),metriks(test_btc,LSTM_pred_btc))
+acc_btc_gru=c(metriks(train_btc,GRU_fit_btc),metriks(test_btc,GRU_pred_btc))
 acc_btc_ols=c(metriks(train_btc,ols_btc$Fitted),metriks(test_btc,ols_btc$Forecasts_Test))
 acc_btc_bg=c(metriks(train_btc,bg_btc$Fitted),metriks(test_btc,bg_btc$Forecasts_Test))
 acc_btc_sa=c(metriks(train_btc,sa_btc$Fitted),metriks(test_btc,sa_btc$Forecasts_Test))
@@ -346,7 +346,7 @@ t2=rbind(acc_eth_lstm, acc_eth_gru, acc_eth_ols, acc_eth_bg, acc_eth_sa)
 
 ```{r, eval=TRUE}
 acc_ltc_lstm=c(metriks(train_ltc,LSTM_fit_ltc),metriks(test_ltc,LSTM_pred_ltc))
-acc_ltc_gru=c(metriks(train_ltc,GRU_fit_ltc),metriks(test_ltc,LSTM_pred_ltc))
+acc_ltc_gru=c(metriks(train_ltc,GRU_fit_ltc),metriks(test_ltc,GRU_pred_ltc))
 acc_ltc_ols=c(metriks(train_ltc,ols_ltc$Fitted),metriks(test_ltc,ols_ltc$Forecasts_Test))
 acc_ltc_bg=c(metriks(train_ltc,bg_ltc$Fitted),metriks(test_ltc,bg_ltc$Forecasts_Test))
 acc_ltc_sa=c(metriks(train_ltc,sa_ltc$Fitted),metriks(test_ltc,sa_ltc$Forecasts_Test))
